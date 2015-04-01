@@ -3,5 +3,10 @@ language: node_js
 node_js:
   - 0.10.24
 
-script: true
+script:
+  - echo $(which python)
+  - echo $(which python2.7)
+  - echo $(which pypy)
+  - echo $(which git)
+  - echo $(which pip)
 
