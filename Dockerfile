@@ -8,9 +8,9 @@ RUN pypy /pypytmp/get-pip.py
 RUN rm -rf /pypytmp
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ADD . /home/shippable/wrk
+ADD . /home/wrk
 
-WORKDIR /home/shippable/wrk
+WORKDIR /home/wrk
 
 #CMD ["/bin/bash", "boot.sh"]
 
